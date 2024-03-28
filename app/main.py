@@ -52,7 +52,7 @@ def multiply_me(number_1: int, number_2: int):
     return {"product": product}
 
 @app.get("/subtract/{number_1}/{number_2}")
-def add_me(number_1: int, number_2: int):
+def subtract_me(number_1: int, number_2: int):
     difference = number_1 - number_2
     return {"difference": difference}
 
