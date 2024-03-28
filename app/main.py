@@ -56,7 +56,11 @@ def add_me(number_1: int, number_2: int):
     difference = number_1 - number_2
     return {"difference": difference}
 
-    
+@app.get("/power/{base}/{exponent}")
+def exponentiation(base: int, exponent: int):
+    result = base ** exponent
+    return {"result": result}
+
 ## Parameters
 # Introduce parameter data types and defaults from the Optional library
 @app.get("/items/{item_id}")
