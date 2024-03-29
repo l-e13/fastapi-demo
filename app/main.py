@@ -8,7 +8,7 @@ import requests
 import boto3
 import os
 import MySQLdb
-from fast.staticfiles import StaticFiles
+from fastapi.staticfiles import StaticFiles
 
 app = FastAPI()
 app.mount("/static", StaticFiles(directory="static", html=True), name="static")
